@@ -1,5 +1,6 @@
 AmicaleApp::Application.routes.draw do
   get "users/new"
+  resources :users
   match '/signup',  to: 'users#new',            via: 'get'
   match '/help',    to: 'static_pages#help',    via: 'get'
   match '/about',   to: 'static_pages#about',   via: 'get'
@@ -8,8 +9,6 @@ AmicaleApp::Application.routes.draw do
 # root 'welcome#index'
 
   resources :microposts
-
-  resources :users
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
