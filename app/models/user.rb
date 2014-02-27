@@ -1,10 +1,11 @@
 class User < ActiveRecord::Base
+
+  before_save { self.name = name.downcase }
 	before_create :create_remember_token
 	validates :name, presence: true
 	validates :phone, presence: true
 	has_secure_password
 	validates :password, length: { minimum: 6 }
-
 
 	def User.new_remember_token
     SecureRandom.urlsafe_base64

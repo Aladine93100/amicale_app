@@ -13,6 +13,7 @@ html {
 
 body {
   padding-top: 60px;
+  background: linear-gradient(#F0F0F0, #505050);
 }
 
 section {
@@ -23,14 +24,39 @@ textarea {
   resize: vertical;
 }
 
-.center {
-  text-align: center;
-  background-color: #660099;
+.alert {
+  margin-top: 150px;
+  background: #F0F0F0 ;
+  background: linear-gradient(#F0F0F0, #505050); 
+  background-size: 100% 200%;
+  transition: background-position .5s;
 }
 
-.center h1 {
-  margin-bottom: 10px;
-  color: white;
+
+.tucked-corners {
+  text-align: center;
+  background: #F0F0F0 ;
+  background: linear-gradient(#F0F0F0, #505050); 
+  background-size: 100% 200%;
+  transition: background-position .5s;
+  box-shadow: 0 1px 25px
+hsla(0,0%,0%,.2) !important;
+  margin-top: 100px;
+
+}
+
+.tucked-corners:hover, .tucked-corners:focus {
+  background-position: 0 -102%;
+}
+
+.btn {
+  background: linear-gradient(#2876b2, #549ad0); 
+  background-size: 100% 200%;
+  transition: background-position .5s linear;
+}
+
+.btn:hover, .btn:focus {
+  background-position: 0 -102%; 
 }
 
 /* typography */
@@ -44,7 +70,6 @@ h1 {
   letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
-  color: #660099;
 }
 
 h2 {
@@ -53,7 +78,7 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: #33FF99;
+  color: black;
 }
 
 p {
@@ -65,18 +90,18 @@ p {
 /* footer */
 
 footer {
-  margin-top: 45px;
+  margin-top: 200px;
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
-  color: #999;
+  color: black;
 }
 
 footer a {
-  color: #B80000 ;
+  color: black;
 }
 
 footer a:hover {
-  color: #B80000 ;
+  color: black;
 }
 
 footer small {
@@ -91,6 +116,7 @@ footer ul {
 footer ul li {
   float: left;
   margin-left: 10px;
+  color: black;
 }
 
 /* miscellaneous */

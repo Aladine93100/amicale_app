@@ -1,0 +1,19 @@
+<%= form_for @contact do |f| %>
+ <div class="field">
+   <%= f.label :name %>
+  <%= f.text_field :name, :required => true %>(required)<br /><br><br>
+ </div>
+ <div class="field">
+  <%= f.label :email %>
+  <%= f.email_field :email, :required => true %>(required)
+  <br /><br><br>
+ </div>
+ <div class="field">
+ <%= f.text_area :message, :required => true %> (required)<br /><br><br>
+ </div>
+ <div class="field">
+  Submit: <%= f.submit "Envoyer" %>
+</div>
+
+<% end %>
+	
