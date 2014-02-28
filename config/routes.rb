@@ -1,7 +1,6 @@
 AmicaleApp::Application.routes.draw do
   
   get "headshot_demo/index"
-  post "headshot/capture" => 'headshot#capture', :as => :headshot_capture
   resources :users
   resources :contacts, only: [:new, :create]
   resources :sessions, only: [:new, :create, :destroy]
