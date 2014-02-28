@@ -10,6 +10,7 @@ gem 'haml-rails'
 gem 'ragi'
 gem 'twilio-ruby'
 gem 'mail_form'
+gem 'protected_attributes'
 
 group :development, :test do
   gem 'sqlite3', '1.3.8'
